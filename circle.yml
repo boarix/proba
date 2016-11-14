@@ -1,4 +1,1 @@
 ##Testing
-  test:
-    pre:
-      - ./jakistam.py collectstatic
