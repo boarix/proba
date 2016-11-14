@@ -1,6 +1,6 @@
-a = row_input()
-b = row_input()
+a = 2
+b = 3
 if a.isdigit() and b.isdigit():
-  print(a + b)
+  return a + b
 else:
-  print("TO NIE ICZBY"!!!)
+  return "TO NIE ICZBY"!!!
