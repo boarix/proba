@@ -1,7 +1,7 @@
 ##Customize the test machine
   machine:
-    post:
-      - pyenv global 2.7.9 3.4.2
+    python:
+      version: pypy-3.5.2
     
 ##Testing
   test:
