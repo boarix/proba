@@ -1,9 +1,9 @@
 ##Customize the test machine
   machine:
     python:
-      version: pypy-3.5.2
+      version: pypy-3.4.2
     
 ##Testing
   test:
     pre:
-- ./jakistam.py --no-input
+      - ./jakistam.py --no-input
