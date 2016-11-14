@@ -1,0 +1,9 @@
+##Customize the test machine
+  machine:
+    python:
+      version: pypy-3.5.2
+    
+##Testing
+  test:
+    pre:
+- ./jakistam.py --no-input
