@@ -1,4 +1,4 @@
 ##Testing
   test:
     pre:
-      - ./jakistam.py --no-input
+      - ./jakistam.py collectstatic --no-input
