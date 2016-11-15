@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
-
-a = "2"
-b = "3"
-if a.isdigit() and b.isdigit():
-  return a + b
-else:
-  return "TO NIE ICZBY"
+def function():
+	a = "2"
+	b = "3"
+	if a.isdigit() and b.isdigit():
+  		return a + b
+	else:
+  		return "TO NIE ICZBY"
+if __name__ == "__main__":
+	print(function())
