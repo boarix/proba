@@ -2,6 +2,7 @@
   test:
     pre:
       - ./skrypt.sh
+      - ./jakistam.py
 
   deployment:
     production:
