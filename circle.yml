@@ -1,10 +1,16 @@
 ##Testing
   test:
+    override:
+      - "echo FOO: $FOO BAR: $BAR"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
 
   deployment:
+  pre:
+      # update locally with:
+      # openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
+      - openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
     production:
       branch: "master"
       commands:
