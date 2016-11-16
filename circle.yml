@@ -1,5 +1,7 @@
 ##Testing
   test:
+    override:
+      - "echo FOO: $FOO"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
