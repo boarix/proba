@@ -2,6 +2,7 @@
   test:
     override:
       - "echo FOO: $FOO"
+      - "echo \"Welcome to LinuxCareer.com\" | openssl aes-256-cbc -c -k $KEY"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
@@ -9,7 +10,6 @@
   dependencies:
     pre:
       # update locally with:
-      - openssl aes-256-cbc -e -in secret-env-plain -k $KEY >> ~/.circlerc
       - openssl aes-256-cbc -e -in secret-env-plain -out secret-env-chiper -k $KEY
       - openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
       
