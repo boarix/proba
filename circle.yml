@@ -2,6 +2,7 @@
   test:
     override:
       - "echo FOO: $FOO"
+      - "head -20 ~/.circlerc"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
