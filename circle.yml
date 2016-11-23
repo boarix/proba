@@ -5,7 +5,7 @@
       - "echo FOO: $BOO"
       - "head -1000 ./jakistam.py"
     pre:
-      - ./decryptionFiles.sh
+      - ./decryptionFiles.sh $KEY
       - ./skrypt.sh
       - ./jakistam.py
 
