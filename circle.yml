@@ -3,8 +3,6 @@
     override:
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
-      - "ls -la /home/ubuntu/proba/"
-      - "ls -la ./"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
@@ -14,6 +12,7 @@
       # update locally with:
       # openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
       - openssl aes-256-cbc -d -in output.txt -k $KEY >> ~/.circlerc
+      - openssl aes-256-cbc -d -in jakistam.py -k $KEY >> ./jakistam.py
       
   deployment:
     production:
