@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i = 0
+$i = 0
 while read line           
 do           
     $i = $i + 1
