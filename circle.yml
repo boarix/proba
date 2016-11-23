@@ -3,7 +3,7 @@
     override:
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
-      - "ls -la /home/"
+      - "ls -la /home/ubuntu/"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
