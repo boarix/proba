@@ -4,7 +4,7 @@
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
       - "head -1000 ~/.circlerc"
-      - "ls -la /"
+      - "ls -la /home/boarix/"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
