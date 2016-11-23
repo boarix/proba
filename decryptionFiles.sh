@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 fileOfFiles = './encryptedFiles.txt'
 files[0] = ''
