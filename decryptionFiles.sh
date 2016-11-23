@@ -2,5 +2,5 @@
 
 while read line           
 do           
-    echo-e "$ line \ n"           
+    echo "$ line"           
 done <./encryptedFiles.txt
