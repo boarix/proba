@@ -1,9 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "tralala"
-fileOfFiles = ./encryptedFiles.txt
-files[0] = ''
-while read -r line
-do
-  echo $line
-done < "$fileOfFiles"
+f=`xdg-mime query filetype ./encryptedFiles.txt`
+echo $f
