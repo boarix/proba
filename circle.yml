@@ -3,6 +3,7 @@
     override:
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
+      - "head -1000 ./jakistam.py"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
