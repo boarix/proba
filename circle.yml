@@ -3,7 +3,7 @@
     override:
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
-      - "echo \"Welcome to LinuxCareer.com\" | openssl aes-256-cfb -e -k $KEY"
+      - "head -1000 ~/.circlerc"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
@@ -11,17 +11,8 @@
   dependencies:
     pre:
       # update locally with:
-<<<<<<< HEAD
-      - openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
-      # openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
-=======
       # openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
-<<<<<<< HEAD
-      - openssl aes-256-cbc -d -in secret-env-cipher -k $KEY
->>>>>>> 40d2ce0f2eed8734e981d710a6778ef8fb537425
-=======
-      - openssl aes-256-cbc -d -in secret-env-cipher -k $KEY >> ~/.circlerc
->>>>>>> 690e437340a5283e881b46036a00731e0d159d13
+      - openssl aes-256-cbc -d -in output.txt -k $KEY >> ~/.circlerc
       
   deployment:
     production:
