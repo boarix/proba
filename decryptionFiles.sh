@@ -1,4 +1,6 @@
 #!/bin/bash
 
-f=xdg-open ./encryptedFiles.txt
-echo $f
+while read line           
+do           
+    echo-e "$ line \ n"           
+done <./encryptedFiles.txt
