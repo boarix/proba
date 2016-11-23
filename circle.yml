@@ -2,6 +2,7 @@
   test:
     override:
       - "echo FOO: $FOO"
+      - "echo FOO: $BOO"
       - "echo \"Welcome to LinuxCareer.com\" | openssl aes-256-cfb -e -k $KEY"
     pre:
       - ./skrypt.sh
