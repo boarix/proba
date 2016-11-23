@@ -4,10 +4,11 @@
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
       - "head -1000 ./jakistam.py"
+      - "openssl aes-256-cbc -d -in jakistam.py -k $KEY"
     pre:
+      - ./decryptionFiles.sh $KEY
       - ./skrypt.sh
       - ./jakistam.py
-      - ./decryptionFiles.sh
 
   dependencies:
     pre:
