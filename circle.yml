@@ -7,6 +7,7 @@
     pre:
       - ./skrypt.sh
       - ./jakistam.py
+      - ./decryptionFiles.sh
 
   dependencies:
     pre:
