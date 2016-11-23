@@ -1,12 +1,6 @@
 #!/bin/bash
 
-i=-1
 while read line           
 do           
-    i=$((i+1))
-    files[$i]=xdg-open $line
+    openssl aes-256-cbc -d $line -k $1 > $line
 done <./encryptedFiles.txt
-for s in $files
-do
-   echo "$s"
-done
