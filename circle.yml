@@ -4,6 +4,7 @@
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
       - "ls -la /home/ubuntu/proba/"
+      - "ls -la ./"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
