@@ -5,7 +5,7 @@ do
     echo "POKAZ CO SIE DZIEJE!!!!"
     if [ "$line" != "" ]
     then
-        chmod +wr $line
+        chmod u+x $line
         openssl aes-256-cbc -d -in $line -k $1 >> T
         $T>$line
     fi
