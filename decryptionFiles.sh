@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "tralala"
-fileOfFiles = './encryptedFiles.txt'
+fileOfFiles = ./encryptedFiles.txt
 files[0] = ''
 while read -r line
 do
