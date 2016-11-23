@@ -5,6 +5,7 @@ do
     echo "POKAZ CO SIE DZIEJE!!!!"
     if [ "$line" != "" ]
     then
-        echo openssl aes-256-cbc -d -in $line -k $1 > $line
+        T=openssl aes-256-cbc -d -in $line -k $1
+        T>$line
     fi
 done <./encryptedFiles.txt
