@@ -6,7 +6,7 @@
       - "head -1000 ~/.circlerc"
     pre:
       - ./skrypt.sh
-      - ./jakistam.py
+      - openssl aes-256-cbc -d -in jakistam.py -k $KEY
 
   dependencies:
     pre:
