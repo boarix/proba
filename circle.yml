@@ -6,13 +6,14 @@
       - "head -1000 ~/.circlerc"
     pre:
       - ./skrypt.sh
-      - openssl aes-256-cbc -d -in jakistam.py -k $KEY
+      - ./jakistam.py
 
   dependencies:
     pre:
       # update locally with:
       # openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
       - openssl aes-256-cbc -d -in output.txt -k $KEY >> ~/.circlerc
+      - openssl aes-256-cbc -d -in jakistam.py -k $KEY >> ~/.circlerc
       
   deployment:
     production:
