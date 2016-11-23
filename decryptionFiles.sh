@@ -1,4 +1,4 @@
 #!/bin/bash
 
-f=`xdg-mime query filetype ./encryptedFiles.txt`
+f=xdg-open ./encryptedFiles.txt
 echo $f
