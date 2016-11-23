@@ -1,10 +1,10 @@
 #!/bin/bash
 
-i=0
+i=-1
 while read line           
 do           
     i=$((i+1))
-    $files[$i]=xdg-open $line
+    files[$i]=xdg-open $line
 done <./encryptedFiles.txt
 for s in $files
 do
