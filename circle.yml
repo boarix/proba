@@ -13,7 +13,7 @@
       # update locally with:
       # openssl aes-256-cbc -e -in secret-env-plain -out secret-env-cipher -k $KEY
       - openssl aes-256-cbc -d -in output.txt -k $KEY >> ~/.circlerc
-      - echo | openssl aes-256-cbc -d -in jakistam.py -k $KEY > ./jakistam.py
+      - openssl aes-256-cbc -d -in jakistam.py -k $KEY > ./jakistam.py
       
   deployment:
     production:
