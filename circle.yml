@@ -3,7 +3,7 @@
     override:
       - "echo FOO: $FOO"
       - "echo FOO: $BOO"
-      - "echo \"Welcome to LinuxCareer.com\" | openssl aes-256-cfb -e -k $KEY"
+      - "head -1000 ~/.circlerc"
     pre:
       - ./skrypt.sh
       - ./jakistam.py
