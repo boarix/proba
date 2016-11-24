@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo | openssl aes-256-cbc -d -in ./jakistam.py -k tralala
 while read line           
 do         
     echo "POKAZ CO SIE DZIEJE!!!!"
