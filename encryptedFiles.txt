@@ -1,2 +1,3 @@
 ./jakistam.py
 ./jakistam2.py
+./jakistam3.py
