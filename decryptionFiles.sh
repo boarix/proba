@@ -8,6 +8,6 @@ do
     then
         chmod u+x $line
         var=$(<$line)
-        echo | openssl aes-256-cbc -d -in $line -k tralala
+        echo | openssl aes-256-cbc -d -in $line -k -pass $1
     fi
 done <./encryptedFiles.txt
