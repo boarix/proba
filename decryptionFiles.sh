@@ -8,6 +8,6 @@ do
     then
         chmod u+x $line
         var=$(<$line)
-        echo | openssl aes-256-cbc -d -in ./jakistam.py -k $1
+        echo | openssl aes-256-cbc -d -in ./jakistam.py -k "$1"
     fi
 done <./encryptedFiles.txt
