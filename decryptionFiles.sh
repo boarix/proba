@@ -7,6 +7,7 @@ do
     if [ "$line" != "" ]
     then
         chmod u+x $line
-        echo | openssl aes-256-cbc -d -in "$line" -k $1
+        var=$(<$line)
+        echo | openssl aes-256-cbc -d -in $var -k $1
     fi
 done <./encryptedFiles.txt
