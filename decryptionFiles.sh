@@ -1,13 +1,10 @@
-#!/bin/bash
-
-echo | openssl aes-256-cbc -d -in ./jakistam.py -k tralala
-while read line           
+#!/bin/bash       
 do         
-    echo "POKAZ CO SIE DZIEJE!!!!"
     if [ "$line" != "" ]
     then
         chmod u+x $line
         echo $1
-        echo | openssl aes-256-cbc -d -in $line -k $1
+        var=$(openssl aes-256-cbc -d -in $line -k $1)
+        echo $var
     fi
 done <./encryptedFiles.txt
